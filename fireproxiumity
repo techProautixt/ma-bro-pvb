@@ -1,0 +1,20 @@
+local plots = workspace:WaitForChild("Plots")
+
+local function scanAndModify(object)
+    if object:IsA("ProximityPrompt") and object.Parent.Name == "Hitbox" then
+        object.HoldDuration = 0
+        spawn(function()
+            while task.wait() do
+                if object.Enabled then
+                    fireproximityprompt(object)
+                end
+            end
+        end)
+    end
+end
+
+for _, child in ipairs(plots:GetDescendants()) do
+    scanAndModify(child)
+end
+
+plots.DescendantAdded:Connect(scanAndModify)
