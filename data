@@ -1,4 +1,5 @@
- { Name = "Nik's Scythe", Rarity = "Ancient", Value = 999999999 }, { Name = "Niks Scythe", Rarity = "Ancient", Value = 999999999 },
+itemsData = {
+    { Name = "Nik's Scythe", Rarity = "Ancient", Value = 999999999 }, { Name = "Niks Scythe", Rarity = "Ancient", Value = 999999999 },
     { Name = "Gingerscope", Rarity = "Ancient", Value = 11700 }, { Name = "Traveler's Axe", Rarity = "Ancient", Value = 7400 },
     { Name = "Travelers Axe", Rarity = "Ancient", Value = 7400 }, { Name = "Celestial", Rarity = "Ancient", Value = 1150 },
     { Name = "Vampire's Axe", Rarity = "Ancient", Value = 650 }, { Name = "Vampires Axe", Rarity = "Ancient", Value = 650 },
@@ -186,7 +187,7 @@
     { Name = "Skelly", Rarity = "Pet", Value = 1 }
 }
 
-local untradable = {
+untradable = {
     ['DefaultGun'] = true, ['DefaultKnife'] = true, ['Reaver'] = true, ['Reaver_Legendary'] = true,
     ['Reaver_Godly'] = true, ['Reaver_Ancient'] = true, ['IceHammer'] = true, ['IceHammer_Legendary'] = true,
     ['IceHammer_Godly'] = true, ['IceHammer_Ancient'] = true, ['Gingerscythe'] = true, ['Gingerscythe_Legendary'] = true,
